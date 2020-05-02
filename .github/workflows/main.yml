@@ -40,7 +40,7 @@ jobs:
     - name: Retrieve oc CLI
       run: |
         curl -LO https://mirror.openshift.com/pub/openshift-v4/clients/ocp/latest/openshift-client-linux-4.3.18.tar.gz
-        tar zxvf openshift-client-linux-4.3.18.tar.gz -C /usr/local/bin
+        sudo tar zxvf openshift-client-linux-4.3.18.tar.gz -C /usr/local/bin
         oc version
 
     # Runs a set of commands using the runners shell
