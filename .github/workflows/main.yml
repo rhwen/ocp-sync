@@ -35,4 +35,4 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run a Docker
       run: |
-        docker run -it --rm quay.io/wenwang/oc-cli:4.3.18 oc adm catalog build --help
+        docker run --rm quay.io/wenwang/oc-cli:4.3.18 oc adm catalog build --help
