@@ -31,7 +31,11 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        
+
+    # Check Public IP address
+    - name: Check Public IP address
+      run: curl myip.ipip.net 
+
     # Runs a set of commands using the runners shell
     - name: Run a Docker
       run: |
